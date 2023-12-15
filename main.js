@@ -30,6 +30,9 @@ const characters = [
 ];
 
 
+
+
+
 // 1. Get an array of all names
 
 const namesArray = characters.map(character => character.name);
@@ -109,6 +112,9 @@ console.log(femaleCharacters);
 // // 13. Sort by name
 
 
+const sortedByName = characters.sort((a, b) => a.name.localeCompare(b.name));
+
+console.log(sortedByName);
 
 
 
@@ -127,6 +133,10 @@ console.log(sortedByHeight);
 
 
 // 16. Sort by gender
+
+const sortedByGender = characters.sort((a, b) => a.gender.localeCompare(b.gender));
+
+console.log(sortedByGender);
 
 
 
