@@ -31,8 +31,6 @@ const characters = [
 
 
 
-
-
 // 1. Get an array of all names
 
 const namesArray = characters.map(character => character.name);
@@ -79,8 +77,23 @@ const totalNameLength = characters.reduce((total, character) => total + characte
 console.log(totalNameLength);
 
 
-
 // 8. Get the total number of characters by eye color (hint. a map of eye color to count)
+
+
+const eyeColors = characters.map((character) => character.eye_color);
+
+
+const colorLengths = {};
+
+eyeColors.forEach((color) => {
+  colorLengths[color] = color.length;
+});
+
+for (const color in colorLengths) {
+  console.log(`${color}: ${colorLengths[color]}`);
+}
+
+
 
 
 
